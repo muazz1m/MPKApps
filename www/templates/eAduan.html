@@ -1,0 +1,68 @@
+<ion-view view-title="e-Aduan">
+	<ion-content class="padding">
+		<h4>Borang Aduan</h4>
+		<form>
+			<div class="list">
+				<label class="item item-input">
+					<input type="text" placeholder="Nama"/>
+				</label>
+				<label class="item item-input">
+					<textarea style="height:100px;" placeholder="Alamat"></textarea>
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="No kad pengenalan"/>
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="E-mel"/>
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Mobil(SMS)"/>
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Telefon"/>
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Faks"/>
+				</label>
+				<!--Keturunan-->
+				<label class="item item-input item-select margin">
+			        <div class="input-label">
+			          Keturunan
+			        </div>
+			        <select ng-model="adu.type" required ng-options='option.value as option.name for option in typeOptions'>
+			          <!-- <option selected>CIVIL</option>
+			          <option>ELECTRICAL</option>
+			          <option>OTHERS</option> -->
+			        </select>
+			    </label>
+			    <!--Jantina-->
+			    <label class="item item-input item-select margin">
+			        <div class="input-label">
+			          Jantina
+			        </div>
+			        <select ng-model="adu.type" required ng-options='option.value as option.name for option in typeOptions'>
+			          <!-- <option selected>CIVIL</option>
+			          <option>ELECTRICAL</option>
+			          <option>OTHERS</option> -->
+			        </select>
+			    </label>
+			    <!--Kategori Pelanggan-->
+			    <label class="item item-input item-select margin">
+			        <div class="input-label">
+			          Kategori Pelanggan
+			        </div>
+			        <select ng-model="adu.type" required ng-options='option.value as option.name for option in typeOptions'>
+			          <!-- <option selected>CIVIL</option>
+			          <option>ELECTRICAL</option>
+			          <option>OTHERS</option> -->
+			        </select>
+			    </label>
+			</div>
+			<div>
+				<button type="submit" class="button button-energized">Isi Semula</button>
+				<button type="submit" class="button button-positive">Seterusnya</button>
+			</div>
+		</form>
+	</ion-content>
+
+</ion-view>

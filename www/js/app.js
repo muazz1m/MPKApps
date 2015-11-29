@@ -17,3 +17,89 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider,$urlRouterProvider){
+
+  $stateProvider
+
+  .state('menu', {
+    url:'/menu',
+    templateUrl:'templates/menu.html',
+    abstract:true,
+    controller:''
+  })
+
+  .state('menu.home', {
+    url:'/home',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/home.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.semak', {
+    url:'/semak',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/semak.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.eLesen', {
+    url:'/eLesen',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/eLesen.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.eKompaun', {
+    url:'/eKompaun',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/eKompaun.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.eBayar', {
+    url:'/eBayar',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/eBayar.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.eAduan', {
+    url:'/eAduan',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/eAduan.html',
+        controller:''
+      }
+    }
+  })
+
+  .state('menu.help', {
+    url:'/help',
+    views:{
+      'menuContent':{
+        templateUrl:'templates/help.html',
+        controller:''
+      }
+    }
+  })
+
+
+  $urlRouterProvider.otherwise('/menu/home');
+
+})
