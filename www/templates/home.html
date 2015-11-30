@@ -1,7 +1,39 @@
 <ion-view view-title="MPK Apps">
-	<ion-content>
-
-		HOME PAGE
+	<ion-content scroll="false">
+		<div style="top:44px; position:fixed; min-width:100%; height:100%;">
+			<div class="row" style="position:absolute; height:30%; padding:0; margin:0;">
+				<button class="button-left col col-50" ng-click="lesen()">
+					<i class="icon-img icon ion-clipboard"></i><br>
+					e-Lesen
+				</button>
+				<button class="button-right col col-50" ng-click="kompaun()">
+			        <i class="icon-img icon ion-model-s"></i><br>
+			        e-Kompaun
+			    </button>
+			</div>
+			<div class="row" style="top:30%;position:absolute; height:35%; padding:0; margin:0;">
+				<div class="bg-custom2 col col-100">
+					<h3 class="semakh3">SEMAKAN CUKAI</h3><br>
+					<div class="wrapper">
+			        	<div class="buttonHolder">
+			         	 	<a href="#/menu/semak" class="button buttonz tick">
+			          		</a>
+			        	</div>
+		        	</div>
+		      	</div>
+			</div>
+			<div class="row" style="top:65%;position:absolute; height:34%; padding:0; margin:0;">
+				<button class="button-left col col-50" ng-click="bayar()">
+		        	<i class="icon-img icon ion-cash"></i><br>
+		        	e-Bayar
+		        </button>
+		        <button class="button-right col col-50" ng-click="aduan()">
+		        	<i class="icon-img icon ion-document-text"></i><br>
+		        	e-Aduan
+		       	</button>
+			</div>
+		</div>	
+		
 	</ion-content>
 
-</ion-view>
+</ion-view> 
